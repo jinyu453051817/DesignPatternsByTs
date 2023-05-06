@@ -1,4 +1,12 @@
-﻿/**
+﻿/** 
+ * @Author       : chenxinyu
+ * @Date         : 2023-05-04 18:18:26
+ * @LastEditors  : chenxinyu
+ * @LastEditTime : 2023-05-05 10:35:30
+ * @FilePath     : \DesignPattens\JavaScripts\Observer\Observer.ts
+ * @Description  : 修改描述
+ */
+/**
  * 主题接口
  */
 export abstract class Subject {
@@ -92,9 +100,9 @@ export class ConcreteObserver2 extends Observer {
 
     /**通知subject更新*/
     public override Update(): void {
-        console.log("ConcreteObserver1.Update")
+        console.log("ConcreteObserver2.Update")
         //获取subject状态
-        console.log("ConcreteObserver1.Subject 当前的主题：" + this.m_subject.GetState())
+        console.log("ConcreteObserver2.Subject 当前的主题：" + this.m_subject.GetState())
     }
 
 }
